@@ -6,7 +6,9 @@
 # formattedDollars() returns it as formatted money
 # requires accounting.js for formatting
 
-class window.Change
+root = exports ? this
+
+class root.Change
 
   cents: 0
 

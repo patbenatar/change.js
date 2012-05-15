@@ -1,5 +1,7 @@
 (function() {
-  window.Change = (function() {
+  var root;
+  root = typeof exports !== "undefined" && exports !== null ? exports : this;
+  root.Change = (function() {
     Change.prototype.cents = 0;
     function Change(options) {
       if (options == null) {

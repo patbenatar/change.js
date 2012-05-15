@@ -4,8 +4,8 @@ Change.js is about the simplest you can get with money calculations in JavaScrip
 
 ## Installation
 
-* Download your flavor (JS or Coffee) and include it in your app
-* If you'd like to use Change.formattedDollars(), include [accounting.js](http://josscrowcroft.github.com/accounting.js/)
+1. Download your flavor (JS or Coffee) and include it in your app
+1. If you'd like to use Change.formattedDollars(), include [accounting.js](http://josscrowcroft.github.com/accounting.js/)
 
 ## Usage
 
