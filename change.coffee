@@ -53,7 +53,7 @@ class root.Change
   ##
 
   multiplyInteger: (factor) ->
-    new Change(cents: @cents * factor)
+    new Change(cents: @cents * parseInt(factor))
 
   multiplyPercent: (percent) ->
     decimal = percent * .01
