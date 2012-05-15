@@ -17,18 +17,21 @@ Change.js is about the simplest you can get with money calculations in JavaScrip
     # With cents
     c2 = new Change({ cents: 1050 })
 
-### Addition and Subtraction
+### Addition and Subtraction of money
 
     sum = c1.add(c2)
     difference = c1.subtract(c2)
 
-### Tax
+### Multiplication with non-money numbers
+
+    # Integer
+    total = sum.multiplyInteger(2)
 
     # With a percentage
-    tax = sum.multiplyTaxPercent(8.25)
+    tax = sum.multiplyPercent(8.25)
 
     # With a decimal
-    tax = sum.multiplyTaxDecimal(0.0825)
+    discounted = sum.multiplyDecimal(0.25)
 
 ### Getting your dollars back!
 

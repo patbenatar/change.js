@@ -12,7 +12,7 @@
       } else if (options.cents != null) {
         this.cents = parseInt(options.cents);
       } else {
-        console.error("Change.js Error: Must provide dollars or cents!");
+        this.cents = 0;
       }
     }
     Change.prototype.dollars = function() {
@@ -35,17 +35,22 @@
         cents: this.cents - subtrahend.cents
       });
     };
-    Change.prototype.multiplyTaxPercent = function(taxPercent) {
-      var product, taxDecimal;
-      taxDecimal = taxPercent * .01;
-      product = Math.round(this.cents * taxDecimal);
+    Change.prototype.multiplyInteger = function(factor) {
+      return new Change({
+        cents: this.cents * factor
+      });
+    };
+    Change.prototype.multiplyPercent = function(percent) {
+      var decimal, product;
+      decimal = percent * .01;
+      product = Math.round(this.cents * decimal);
       return new Change({
         cents: product
       });
     };
-    Change.prototype.multiplyTaxDecimal = function(taxDecimal) {
+    Change.prototype.multiplyDecimal = function(decimal) {
       var product;
-      product = Math.round(this.cents * taxDecimal);
+      product = Math.round(this.cents * decimal);
       return new Change({
         cents: product
       });

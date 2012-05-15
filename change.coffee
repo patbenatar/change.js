@@ -19,7 +19,7 @@ class root.Change
     else if options.cents?
       @cents = parseInt(options.cents)
     else
-      console.error "Change.js Error: Must provide dollars or cents!"
+      @cents = 0
 
 
   dollars: ->
@@ -46,15 +46,20 @@ class root.Change
 
 
   ##
-  # Tax
-  # Percent
+  # Non-money
+  # calculations
+  # Useful for tax
+  # or calculating discounts
   ##
 
-  multiplyTaxPercent: (taxPercent) ->
-    taxDecimal = taxPercent * .01
-    product = Math.round(@cents * taxDecimal)
+  multiplyInteger: (factor) ->
+    new Change(cents: @cents * factor)
+
+  multiplyPercent: (percent) ->
+    decimal = percent * .01
+    product = Math.round(@cents * decimal)
     new Change(cents: product)
 
-  multiplyTaxDecimal: (taxDecimal) ->
-    product = Math.round(@cents * taxDecimal)
+  multiplyDecimal: (decimal) ->
+    product = Math.round(@cents * decimal)
     new Change(cents: product)
