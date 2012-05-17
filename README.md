@@ -11,36 +11,43 @@ Change.js is about the simplest you can get with money calculations in JavaScrip
 
 ### Initializing
 
-    # With dollars
-    c1 = new Change({ dollars: 10.5 })
+```coffeescript
+# With dollars
+c1 = new Change({ dollars: 10.5 })
 
-    # With cents
-    c2 = new Change({ cents: 1050 })
+# With cents
+c2 = new Change({ cents: 1050 })
+```
 
 ### Addition and Subtraction of money
 
-    sum = c1.add(c2)
-    difference = c1.subtract(c2)
+```coffeescript
+sum = c1.add(c2)
+difference = c1.subtract(c2)
+```
 
 ### Multiplication with non-money numbers
 
-    # Integer
-    total = sum.multiplyInteger(2)
+```coffeescript
+# Integer
+total = sum.multiplyInteger(2)
 
-    # With a percentage
-    tax = sum.multiplyPercent(8.25)
+# With a percentage
+tax = sum.multiplyPercent(8.25)
 
-    # With a decimal
-    discounted = sum.multiplyDecimal(0.25)
+# With a decimal
+discounted = sum.multiplyDecimal(0.25)
+```
 
 ### Getting your dollars back!
 
-    # As a float
-    sum.dollars()
+```coffeescript
+# As a float
+sum.dollars()
 
-    # As formatted US dollars (requires accounting.js)
-    sum.formattedDollars()
-
+# As formatted US dollars (requires accounting.js)
+sum.formattedDollars()
+```
 ## Caveats
 
 Change.js currently only supports US dollars.
