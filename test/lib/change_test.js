@@ -151,4 +151,23 @@ describe('Change.js', function() {
       });
     });
   });
+
+  describe('.sum', function() {
+    it('adds all provided change objects together', function() {
+      var item1 = new Change({ cents: 1000 });
+      var item2 = new Change({ cents: 3500 });
+      var item3 = new Change({ cents: 1525 });
+
+      var total = Change.sum([item1, item2, item3]);
+      expect(total.cents).to.equal(6025);
+    });
+
+    it('supports a list of args instead of an array', function() {
+      var item1 = new Change({ cents: 1000 });
+      var item2 = new Change({ cents: 3500 });
+
+      var total = Change.sum(item1, item2);
+      expect(total.cents).to.equal(4500);
+    })
+  });
 });
