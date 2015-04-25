@@ -7,6 +7,9 @@ errors. All operations return the result in a new instance of `Change`.
 
 Currency formatting and rounding can be customized via dependency injection.
 
+[![Code Climate](https://codeclimate.com/github/patbenatar/change.js/badges/gpa.svg)](https://codeclimate.com/github/patbenatar/change.js)
+[![Test Coverage](https://codeclimate.com/github/patbenatar/change.js/badges/coverage.svg)](https://codeclimate.com/github/patbenatar/change.js)
+
 ## Setup
 
 ### Requiring
