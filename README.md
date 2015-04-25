@@ -47,6 +47,16 @@ var c2 = new Change({ cents: 1050 });
 var c1 = new Change({ dollars: 10.5 });
 ```
 
+### Getting your dollars back
+
+```js
+// As a float
+sum.dollars();
+
+// As formatted US dollars (requires injecting a formatter)
+sum.formattedDollars();
+```
+
 ### Calculations
 
 All calculations return new `Change` instances and do not mutate the original
@@ -66,14 +76,16 @@ var tax = sum.multiplyPercent(8.25);
 var total = c1.add(c2).multiplyPercent(8.25);
 ```
 
-### Getting your dollars back!
+#### Set calculations
+
+Perform operations on lists of `Change` objects.
 
 ```js
-// As a float
-sum.dollars();
+// Sum a list of Change objects
+var sum = Change.sum(c1, c2, c3, c4);
 
-// As formatted US dollars (requires injecting a formatter)
-sum.formattedDollars();
+// Or provide an array if you've got one
+var sum = Change.sum([c1, c2, c3, c4]);
 ```
 
 ## Caveats
