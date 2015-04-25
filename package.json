@@ -1,0 +1,44 @@
+{
+  "name": "change-js",
+  "description": "A stupid simple money calculation library that deals in cents.",
+  "version": "1.0.0",
+  "keywords": [
+    "money",
+    "cents",
+    "currency",
+    "currency formatting"
+  ],
+  "homepage": "https://github.com/patbenatar/change.js",
+  "repository": {
+    "type": "git",
+    "url": "git://github.com/patbenatar/change.js.git"
+  },
+  "author": {
+    "name": "Nick Giancola",
+    "email": "nick@gophilosophie.com",
+    "url": "https://github.com/patbenatar"
+  },
+  "license": "MIT",
+  "main": "./lib/change.js",
+  "scripts": {
+    "test": "grunt test"
+  },
+  "devDependencies": {
+    "underscore": "^1.8.2",
+    "assertion-error": "^1.0.1",
+    "chai": "^1.10.0",
+    "chai-fuzzy": "^1.4.0",
+    "codeclimate-test-reporter": "0.0.4",
+    "eslint": "~0.14.1",
+    "grunt": "~0.4.5",
+    "grunt-cli": "~0.1.13",
+    "grunt-config-dir": "~0.3.2",
+    "grunt-eslint": "~6.0.0",
+    "grunt-mocha-cli": "~1.12.0",
+    "grunt-mocha-istanbul": "^2.3.1",
+    "istanbul": "^0.3.8",
+    "load-grunt-tasks": "~3.1.0",
+    "mocha": "~1.18.0",
+    "sinon": "~1.12.2"
+  }
+}
