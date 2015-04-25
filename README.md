@@ -7,6 +7,7 @@ errors. All operations return the result in a new instance of `Change`.
 
 Currency formatting and rounding can be customized via dependency injection.
 
+[![npm version](https://badge.fury.io/js/change-js.svg)](http://badge.fury.io/js/change-js)
 [![Code Climate](https://codeclimate.com/github/patbenatar/change.js/badges/gpa.svg)](https://codeclimate.com/github/patbenatar/change.js)
 [![Test Coverage](https://codeclimate.com/github/patbenatar/change.js/badges/coverage.svg)](https://codeclimate.com/github/patbenatar/change.js)
 
