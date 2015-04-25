@@ -1,9 +1,9 @@
 # Change.js
 
 Change.js is about the simplest you can get with money calculations in JavaScript.
-Initialize a Change() object with dollars or cents and add or subtract amounts or
+Initialize a `Change` object with dollars or cents and add or subtract amounts or
 calculate tax. All calculations are done in cents to avoid floating point
-errors. All operations return the result in a new instance of Change().
+errors. All operations return the result in a new instance of `Change`.
 
 Currency formatting and rounding can be customized via dependency injection.
 
