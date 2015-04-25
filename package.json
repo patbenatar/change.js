@@ -1,7 +1,7 @@
 {
   "name": "change-js",
   "description": "A stupid simple money calculation library that deals in cents.",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "keywords": [
     "money",
     "cents",
