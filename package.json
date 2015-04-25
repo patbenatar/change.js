@@ -23,8 +23,11 @@
   "scripts": {
     "test": "grunt test"
   },
+  "depdendencies": {
+    "underscore": "^1.8.2"
+  },
   "devDependencies": {
-    "underscore": "^1.8.2",
+    "accounting": "^0.4.1",
     "assertion-error": "^1.0.1",
     "chai": "^1.10.0",
     "chai-fuzzy": "^1.4.0",
